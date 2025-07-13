@@ -1,17 +1,17 @@
-# API REST de Transações Financeiras
+# 💰 API REST de Transações Financeiras
 
-Esta é uma API REST desenvolvida em Node.js com Fastify e Knex.js para gerenciar transações financeiras. A API permite criar, listar, visualizar e resumir transações, garantindo que cada usuário tenha acesso apenas às suas próprias informações.
+Este projeto foi desenvolvido durante a pós-graduação Tech Developer 360 da Rocketseat. Esta é uma API REST criada em Node.js com Fastify e Knex.js para gerenciar transações financeiras, permitindo criar, listar, visualizar e resumir transações, com a garantia de que cada usuário acesse apenas suas próprias informações.
 
-## Funcionalidades
+## ✨ Funcionalidades
 
-### Requisitos Funcionais (RF)
+### ✅ Requisitos Funcionais (RF)
 
 - **Criar nova transação:** O usuário pode registrar uma nova transação informando título, valor e tipo (crédito ou débito).
 - **Obter resumo da conta:** O usuário pode visualizar o saldo total de sua conta, consolidando todas as transações.
 - **Listar todas as transações:** O usuário tem acesso a uma lista completa de todas as suas transações já realizadas.
 - **Visualizar transação única:** É possível consultar os detalhes de uma transação específica por meio de seu ID.
 
-### Regras de Negócio (RN)
+### 📋 Regras de Negócio (RN)
 
 - **Tipos de Transação:**
   - **Crédito:** Adiciona valor ao saldo total.
@@ -19,18 +19,18 @@ Esta é uma API REST desenvolvida em Node.js com Fastify e Knex.js para gerencia
 - **Identificação de Usuário:** A API utiliza cookies (`sessionId`) para identificar e autenticar o usuário entre as requisições, garantindo a segurança e a privacidade dos dados.
 - **Privacidade de Dados:** O usuário só pode acessar e visualizar as transações que ele mesmo criou.
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 - **Node.js:** Ambiente de execução JavaScript no servidor.
 - **Fastify:** Framework web de alta performance para Node.js.
 - **Knex.js:** SQL query builder para Node.js, compatível com diversos bancos de dados.
 - **TypeScript:** Superset do JavaScript que adiciona tipagem estática.
 - **Zod:** Biblioteca para validação de esquemas e tipos de dados.
-- **Vitest:** Framework de testes para projetos em Vite, mas amplamente utilizado com TypeScript.
-- **ESLint:** Ferramenta para linting de código, garantindo a padronização e a qualidade do código.
+- **Vitest:** Framework de testes moderno para projetos em TypeScript/JavaScript.
+- **ESLint:** Ferramenta para linting, garantindo a padronização e a qualidade do código.
 - **tsx:** Executa arquivos TypeScript e ESNext em Node.js de forma nativa e eficiente.
 
-## Estrutura do Banco de Dados
+## 🗃️ Estrutura do Banco de Dados
 
 A tabela `transactions` armazena os dados das transações e possui a seguinte estrutura:
 
@@ -40,7 +40,7 @@ A tabela `transactions` armazena os dados das transações e possui a seguinte e
 - `amount` (Decimal): Valor da transação. Valores de débito são armazenados como negativos.
 - `created_at` (Timestamp): Data e hora de criação da transação.
 
-## Endpoints da API
+## 🌐 Endpoints da API
 
 O prefixo base para todos os endpoints de transações é `/transactions`.
 
@@ -128,7 +128,7 @@ Retorna o resumo financeiro do usuário.
   }
   ```
 
-## Como Executar o Projeto
+## 🛠️ Como Executar o Projeto
 
 1. **Clone o repositório:**
    ```bash
@@ -157,7 +157,7 @@ Retorna o resumo financeiro do usuário.
 
    O servidor estará disponível em `http://localhost:3333` (ou na porta configurada).
 
-## Como Executar os Testes
+## 🧪 Como Executar os Testes
 
 Para garantir a qualidade e o funcionamento correto da API, execute os testes automatizados:
 
